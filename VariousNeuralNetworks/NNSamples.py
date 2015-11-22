@@ -1,10 +1,15 @@
+'''
+based on very nice tutorial
+from https://github.com/dennybritz/nn-from-scratch/blob/master/nn-from-scratch.ipynb
+'''
+
 import numpy as np
 import sklearn
 import sklearn.datasets 
 import matplotlib.pyplot as plt
 import sklearn.linear_model
 import matplotlib
-
+from pprint import pprint
 
 def plot_decision_boundary(pred_func):
     # Set min and max values and give it some padding
@@ -26,6 +31,10 @@ def plot_decision_boundary(pred_func):
 #generate a dataset and plot it
 np.random.seed(0)
 X,y = sklearn.datasets.make_moons(500, noise=0.2)
+
+#pprint(X.shape)
+#(500,2)
+#quit()
 #plt.scatter(X[:,0], X[:,1], s=40, c=y, cmap=plt.cm.Spectral)
 #plt.show()
 
