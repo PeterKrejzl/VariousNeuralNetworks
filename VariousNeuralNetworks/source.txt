@@ -1,0 +1,1 @@
+based on great tutorial from https://github.com/dennybritz/rnn-tutorial-rnnlm/blob/master/RNNLM.ipynb
