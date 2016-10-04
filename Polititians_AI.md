@@ -3,25 +3,29 @@
 </p>
 ##Can Artificial Intelligence replace politicians?
 
-Deep Learning and the methods based on the neural networks are really popular these days. Almost looks like the company that does not use neural networks to support their business has no chance :)
+Deep Learning and the methods based on the neural networks are really popular these days. Almost looks like the company that does not use neural networks to support their business has no chance to succeed.
 
-There is a real boom of deep-learning methods, involving a lot of research in the area of algorithms as well as hardware supporting their huge computational needs. Not even talking about the availability of huge datasets used to train these networks.
-Big companies like Google or Facebook have their own (big) teams working on deep learning, a lot of work is being done in academic sphere as well.
+There is a real boom of deep-learning methods, involving a lot of research in the area of algorithms as well as hardware supporting their huge computational needs. Not even talking about the availability of big datasets used to train these networks.
+Large companies like Google or Facebook have their own teams working on deep learning, a lot of work is being done in academic sphere as well.
 
-However, the idea of software simulating a human brain is not new, people were always fascinated how a brain works and it was considered as something like an ultimate goal for many decades.
+However, the idea of software mimicking a human brain is not new. People were always fascinated how a brain works and some sort of generall artificial intelligence is like an ultimate goal for many decades.
 
 We are not that far :)
 
-In this post I’m not going to explain the technical details (maybe later :)), there are many tutorials around. I would just like to share some my excitement I experienced when playing with them.
+In this post I’m not going to explain the technical details (maybe later), there are many tutorials around. I would just like to share some of my excitement I experienced when playing with them.
 
-Especially, I looked at so called recurrent neural networks (RNN) that belong to most complicated among all others. On the other hand, they can bring very interesting results.
+Especially, I looked at so called recurrent neural networks (RNN) that belong to most complicated cases of neural networks. On the other hand, they can bring very interesting results.
+
 Generally, to fully understand this area some knowledge of linear algebra is needed but usually it is nothing more complex than just some matrix and vector multiplications.
 
-There is a very interesting implementation done by [Andrej Karpathy](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) who trained the character level neural network. Character in this context means it works with characters and not for example whole words. After learning from some text (can be almost anything), the network generates one character at the time and the result is influenced not only by the input but also (here’s the recurrence) by the entire history of previous inputs. 
+There is a very interesting implementation done by [Andrej Karpathy](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) who trained the character-level neural network. Character in this context means it works with characters only and not for example whole words. After learning from some text (can be almost anything), the network generates one character at the time and the result is influenced not only by the input but also (here’s the recurrence!) by the entire history of previous inputs. 
 
-Sounds complicated? It’s not :) Basically, the network will based on the training text generate some other text. It has no information about the grammar, it knows nothing about the text itself, it just observes and learns from the examples we provided.
+Sounds complicated? It’s not :) Basically, the network will based on the training text generate some other text. It has no information about the grammar, it knows nothing about the text itself, it just observes and learns from the examples we provided. One character after the other.
 
-Let’s get back to my question from the title - is it possible to replace politicians? I took data set from European Parliament and trained the network on that. The dataset contains about 300MB of text, basically the transcriptions of speeches held in Parliament in 2011.
+Let’s get back to my question from the title - is it possible to replace politicians? 
+
+I took the data set from European Parliament and trained the network on that. The dataset contains about 300MB of text, basically the transcriptions of speeches held in Parliament in 2011.
+
 The network generated it’s own speech, character by character. 
 
 Here’s an example:
@@ -36,12 +40,14 @@ to the control of the conclusion that it is a question to the protocol the servi
 the European Union and other sectors.
 ```
 
-As you can see it looks like English text but almost completely meaningless. Well, the truth is that original transcriptions from the parliament are meaningless for me as well :) But we can clearly see that just based on characters, the network is following some sort of English grammar like capital letter at the beginning and generally the text really looks like an English.
+As you can see it looks like English text but almost completely meaningless. Well, the truth is that original transcriptions from the parliament are meaningless for me as well :) But we can clearly see that just based on characters, the network is following some sort of English grammar like capital letter at the beginning and generally the text really looks like an English. Commas, spaces, everything looks ok.
 Depending how conservative the model is, it can also from time to time generate some new words or unexpected phrases.
 
-```I would like to say that the EU is currently being interconsulting the programme in the world.```
+```
+I would like to say that the EU is currently being interconsulting the programme in the world.
+```
 
-Also we can see the network (as well as all politicians!) really likes very long sentences:
+Also we can see that the network (as well as all politicians!) really likes very long sentences:
 
 ```
 However, I would like to finish the contributions on the British people of the French and 
@@ -68,21 +74,20 @@ in the context of the programmes and optimism, which is not only the decision of
 ```
 
 
+This should be really just a (hopefully) funny example of a network creating its own language model. Such a thing can be coded in minutes and trained in a couple of hours.
 
 
-This should be really just a funny example of a network creating its own language model but such a thing can be coded in minutes and trained in a couple of hours.
+It similarly works with the source code. I took a couple of megabytes of stored procedures source code and got very similar and interesting results. Obviously, the SQL or any other programming language is a bit more strict but the generated procedures were very close to be compiled :)
 
 
-It similarly (in a funny way) works with the source code. I took a couple of megabytes of the code of our stored procedures and got very similar and interesting results. Obviously, the SQL or any other programming language it a bit more strict but the generated procedures were very to close to be compiled :)
+And because I had to somehow defend the evenings spending reading and playing with the deep learning techniques, especially for my wife I trained one more model based on the [Jane Austin] (https://www.facebook.com/JaneAustenAuthor/?fref=ts) novels. 
 
-
-
-And because I had to somehow defend the evenings spending reading and playing with the deep learning techniques, especially for my wife I trained one more model based on the [Jane Austin] (https://www.facebook.com/JaneAustenAuthor/?fref=ts) novels. So, from the European Parliament back to the world of `“Sense and Sensibility”`, `“Pride and Prejudice”` and `“Persuasion”`.
+So, now from the present back to the world of `“Sense and Sensibility”`, `“Pride and Prejudice”` and `“Persuasion”`.
 <p align="center">
 <img align="center" src="https://github.com/PeterKrejzl/VariousNeuralNetworks/blob/master/img/Jane_Austen_coloured_version.jpg">
 </p>
 
-Here are some examples (same as before - I have no clue what this is about :) )
+(same as before - I have no clue what this is about)
 
 ```
 Mrs. Bennet was not so elegant, and the formality was all that
