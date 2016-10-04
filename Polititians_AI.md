@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://github.com/PeterKrejzl/VariousNeuralNetworks/blob/master/img/ep.jpg"/>
+</p>
 ##Can Artificial Intelligence replace politicians?
 
 Deep Learning and the methods based on the neural networks are really popular these days. Almost looks like the company that does not use neural networks to support their business has no chance :)
@@ -79,7 +82,7 @@ And because I had to somehow defend the evenings spending reading and playing wi
 <img align="center" src="https://github.com/PeterKrejzl/VariousNeuralNetworks/blob/master/img/Jane_Austen_coloured_version.jpg">
 </p>
 
-Here are some examples (same as before- I have no clue what this is about :) )
+Here are some examples (same as before - I have no clue what this is about :) )
 
 ```
 Mrs. Bennet was not so elegant, and the formality was all that
