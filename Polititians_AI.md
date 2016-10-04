@@ -75,7 +75,7 @@ It similarly (in a funny way) works with the source code. I took a couple of meg
 
 
 And because I had to somehow defend the evenings spending reading and playing with the deep learning techniques, especially for my wife I trained one more model based on the [Jane Austin] (https://www.facebook.com/JaneAustenAuthor/?fref=ts) novels. So, from the European Parliament back to the world of `“Sense and Sensibility”`, `“Pride and Prejudice”` and `“Persuasion”`.
-![alt text](https://github.com/PeterKrejzl/VariousNeuralNetworks/blob/master/img/Jane_Austen_coloured_version.jpg "Jane Austin")
+-> ![alt text](https://github.com/PeterKrejzl/VariousNeuralNetworks/blob/master/img/Jane_Austen_coloured_version.jpg "Jane Austin") <-
 
 
 Here are some examples (same as before- I have no clue what this is about :) )
